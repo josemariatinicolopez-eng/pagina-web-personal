@@ -3,18 +3,35 @@
 <html lang="es">
 
 <head>
-    <meta name="keywords" content="portafolio, estudiante, programación, desarrollo web">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portafolio, sistemas Computacionales, programación, desarrollo web">
     <meta name="description" content="Página web personal y portafolio académico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mi P&aacute;gina Web Personal</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-    <h1>Mi P&aacute;gina Web Personal</h1>
+    <header class="encabezado" id="inicio">
+        <div class="encabezado-contenido">
+            <p class="etiqueta-superior">PORTAFOLIO ACADÉMICO · INGENIERÍA EN SISTEMAS</p>
+            <h1>Mi P&aacute;gina Web Personal</h1>
+            <p class="bienvenida">Bienvenido a mi P&aacute;gina web personal.</p>
+        </div>
+    </header>
 
-    <p>Bienvenido a mi P&aacute;gina web personal.</p>
+    <nav class="menu" aria-label="Navegación principal">
+        <div class="menu-boton"><a href="#Presentacion">Presentación</a></div>
+        <div class="menu-boton"><a href="#Formacion">Formación</a></div>
+        <div class="menu-boton"><a href="#Gustos">Gustos</a></div>
+        <div class="menu-boton"><a href="#Portafolio">Proyectos</a></div>
+        <div class="menu-boton"><a href="#Certificaciones">Constancias</a></div>
+        <div class="menu-boton"><a href="#Redes">Redes</a></div>
+        <div class="menu-boton"><a href="#Contacto">Contacto</a></div>
+        <div class="menu-boton"><a href="#formulario">Formulario</a></div>
+    </nav>
 
 
     <hr>
@@ -24,7 +41,7 @@
 
         <img src="img/perfil.jpeg" alt="Fotograf&iacute;a personal" width="225" height="250">
 
-        <h3>Datos personales</h3>
+        <h3 class="verde-Mover">Datos personales</h3>
 
         <p>
             <strong>Nombre:</strong> Jos&eacute; Mar&iacute;a Tinoco L&oacute;pez 
@@ -64,7 +81,7 @@
 
     <h3>Trayectoria acad&eacute;mica</h3>
 
-    <table border="1">
+    <table>
         <tr>
             <th>Nivel</th>
             <th>Instituci&oacute;n</th>
@@ -85,10 +102,12 @@
             <td>2020 - 2023</td>
             <td>Concluido</td>
         </tr>
+        <tr>
             <td>Secundaria</td>
             <td>Emilio Carranza</td>
             <td>2017 - 2020</td>
             <td>Concluido</td>
+        </tr>
         </table>
 
     </section>
@@ -138,7 +157,7 @@
             </li>
         </ul>
 
-        <h3>Mis &aacute;reas de inter&eacute;s</h3>
+        <h3 class="verde-Mover">Mis &aacute;reas de inter&eacute;s</h3>
 
         <ol>
             <li>Desarrollo de aplicaciones</li>
@@ -269,11 +288,15 @@
         </p>
 
         <a href="https://lnkd.in/p/gPzagqjt" target="_blank">
-            Visitar mi publicaci&oacute; de LinkedIn
+            Visitar mi publicaci&oacute;n de LinkedIn
         </a> 
         <br>
         <a href="https://lnkd.in/p/gqEp4VrD" target="_blank">
-            Visitar mi publicaci&oacute; de LinkedIn
+            Visitar mi publicaci&oacute;n de LinkedIn
+        </a>
+        <br>
+        <a href="https://youtube.com/@josetinoco8620?si=srB-LSSQ0VTZkIec" target="_blank">
+            Visitar mi Canal de YouTube
         </a>
 
     </section>
@@ -345,14 +368,14 @@
                 <input type="checkbox" id="gustos" name="seccion" value="gustos">
                 <label for="gustos">Gustos y preferencias</label>
                 <br>
-                <input type="checkbox" id="Formacion" name="seccion" value="formacion">
+                <input type="checkbox" id="formacion" name="seccion" value="formacion">
                 <label for="formacion">Formaci&oacute;n</label>
                 <br>
-                <input type="checkbox" id="Certificaciones" name="seccion" value="certificaiones">
+                <input type="checkbox" id="certificaciones" name="seccion" value="certificaciones">
                 <label for="certificaciones">Certificaciones</label>
                 <br>
                 <input type="checkbox" id="Redes" name="seccion" value="redes">
-                <label for="Redes">redes</label>
+                <label for="Redes">Redes</label>
             
                 <p>
                     <strong>&iquest;Recomendar&iacute;as mi p&aacute;gina?</strong>
@@ -391,6 +414,7 @@
         </form>
 
     </section>
+    <footer class="pie-pagina"><p>Portafolio personal · Ingeniería en Sistemas Computacionales</p><a href="#inicio">Volver al inicio </a></footer>
 </body>
 
 </html>
